@@ -1,6 +1,6 @@
 const express = require('express');
 
-const PostsRouter = require();
+const PostsRouter = require('./posts/posts-router.js');
 
 const server = express();
 
@@ -12,3 +12,5 @@ server.get('/', (req, res) => {
       <h1>Web API Posts</h1>
    `)
 })
+
+module.exports = server;
